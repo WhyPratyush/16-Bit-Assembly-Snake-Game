@@ -1,0 +1,31 @@
+# --- Compiled Binaries & Build Output ---
+*.bin
+*.o
+*.obj
+*.elf
+*.img
+*.iso
+
+# --- Debugging & Map Files ---
+# (In case you generate symbol maps later)
+*.map
+*.sym
+
+# --- OS Generated Junk ---
+# Windows (Since your folder is on OneDrive/Windows Desktop)
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS (Good practice to include for other developers)
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Editor / IDE Folders ---
+.vscode/
+.idea/
+*.swp
+*.swo
