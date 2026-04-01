@@ -6,34 +6,34 @@ A classic Snake game written entirely in x86 assembly that fits completely withi
 To compile and run this game, you need the Netwide Assembler (`nasm`) and an emulator like `qemu`. 
 
 **Debian / Ubuntu:**
-\`\`\`bash
+```bash
 sudo apt update
 sudo apt install nasm qemu-system-x86
-\`\`\`
+```
 
 **macOS (using Homebrew):**
-\`\`\`bash
+```bash
 brew install nasm qemu
-\`\`\`
+```
 
 **Arch Linux:**
-\`\`\`bash
+```bash
 sudo pacman -S nasm qemu-desktop
-\`\`\`
+```
 
 ## How to Play
 
 ### Build and Run
 If you have `make` installed, you can build and run the game in one step:
-\`\`\`bash
+```bash
 make run
-\`\`\`
+```
 
 Alternatively, you can run the commands manually:
-\`\`\`bash
+```bash
 nasm -f bin snake.asm -o snake.bin
 qemu-system-x86_64 -drive format=raw,file=snake.bin
-\`\`\`
+```
 
 ### Controls
 * **W** - Up
