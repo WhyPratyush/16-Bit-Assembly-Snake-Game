@@ -49,9 +49,9 @@ qemu-system-x86_64 -drive format=raw,file=snake.bin
 If you find the game too fast or too slow, you can adjust the delay loop in `snake.asm`. 
 
 Look for this line under the `game_loop` label (around line 72):
-\`\`\`nasm
+```nasm
     mov dx, 1250  ; Controls the delay between frames
-\`\`\`
+```
 * **To make it slower:** Increase the number (e.g., `mov dx, 2000`).
 * **To make it faster:** Decrease the number (e.g., `mov dx, 800`).
 Recompile the code using `make run` after saving your changes.
